@@ -9,7 +9,7 @@ async function searchmovie() {
     const search = document.querySelector("#search").value;
     // const search="avengers"
     const res = await fetch(
-      `http://www.omdbapi.com/?s=${search}&apikey=b1ef93ae`
+      `https://www.omdbapi.com/?s=${search}&apikey=b1ef93ae`
     );
     const data = await res.json();
     console.log(data.Search);
